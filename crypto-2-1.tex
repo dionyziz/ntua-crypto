@@ -1,0 +1,229 @@
+\documentclass[11pt,a4paper]{book}
+\usepackage[english,greek]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb,latexsym,amsmath,ucs,amsthm,setspace,graphicx}
+\newtheorem*{lemma}{Λήμμα}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\defeq}{\overset{\underset{\mathrm{def}}{}}{=}}
+\makeatletter
+\def\imod#1{\allowbreak\mkern10mu({\operator@font mod}\,\,#1)}
+\makeatother
+\raggedbottom
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[width=0.15\textwidth]{Pyrforos2.png}\\[1.cm]
+\textsc{\LARGE Εθνικό Μετσόβιο Πολυτεχνείο}\\[1.5cm]
+
+\Large{ Σημειώσεις Διαλέξεων }\\[0.5cm]
+
+% Title
+\begin{doublespace}
+\HRule \\[0.4cm]
+{\huge \bfseries
+Στοιχεία Θεωρίας Αριθμών
+\\
+\&
+\\
+Εφαρμογές στην Κρυπτογραφία
+}\\[0.4cm]
+\end{doublespace}
+
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Επιμέλεια σημειώσεων:}\\
+Διονύσης \textsc{Ζήνδρος}
+Αντώνης \textsc{Αναστασόπουλος}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Διδάσκοντες:} \\
+Στάθης \textsc{Ζάχος}\\
+Άρης \textsc{Παγουρτζής}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+{\large 2 Δεκεμβρίου 2011}
+\end{center}
+\end{titlepage}
+
+\section*{Επίλυση γραμμικής ισοτιμίας}
+
+Ζητείται να λυθεί η ισοτιμία ως προς $x$:
+\[
+ax \equiv b \imod n
+\]
+
+Για παράδειγμα:
+
+\[
+4x \equiv 6 \imod 7
+\]
+
+Καθώς βρισκόμαστε σε αριθμητική \textlatin{modulo}, μπορούμε να δοκιμάσουμε εξαντλητικά τις πιθανές λύσεις:
+
+\[
+4 \mathbb{Z}_7 = \{ 0, 4, 1, 5, 2, 6, 3 \}
+\]
+
+Πράγματι η μοναδική λύση της ισοτιμίας είναι:
+
+\[
+x \equiv 5 \imod 7
+\]
+
+\begin{lemma}
+Η ισοτιμία $ax \equiv b \imod n$ έχει μοναδική λύση όταν $\gcd( a, n ) = 1$, την $x = a^{-1}b\imod n$.
+\end{lemma}
+\begin{proof}
+Πράγματι, υπάρχει η λύση $x \equiv a^{-1}b \imod n$. Έστω τώρα ότι υπάρχουν λύσεις $x$, $x'$. Τότε έχουμε:
+
+\begin{align*}
+	\left\{ \begin{array}{ll}
+         ax &\equiv b \imod n\\
+         ax' &\equiv b \imod n\end{array} \right.
+    &\Rightarrow ax \equiv ax' \imod n\\
+    &\Leftrightarrow n|a(x - x')\\
+    &\Leftrightarrow n|(x - x')\\
+    &\Leftrightarrow x \equiv x' \imod n
+\end{align*}
+\end{proof}
+
+Το αποτέλεσμα αυτό δεν ισχύει απαραίτητα όταν $\gcd( a, n ) \neq 1$. Για παράδειγμα η εξής ισοτιμία δεν έχει λύση:
+
+\[
+10x \equiv 6 \imod{35}
+\]
+
+Πράγματι, θα είναι:
+\[
+10\mathbb{Z}_{35} = \{ 0, 10, 20, 30, 5, 15, 25, 0, 10, 20, 30, \dots \}
+\]
+
+Ενώ, για παράδειγμα, η εξής ισοτιμία έχει πολλές λύσεις:
+\[
+10x \equiv 30 \imod{35}
+\]
+
+\begin{lemma}
+Έστω $d = \gcd( a, n ) > 1$. Η ισοτιμία $ax \equiv b \imod n$ έχει ακριβώς $d$ λύσεις ανν $d|b$. Διαφορετικά δεν έχει λύσεις.
+\end{lemma}
+\begin{proof}
+Θα δείξουμε ότι $\exists x \Rightarrow d|b$. Πράγματι:
+\begin{align*}
+& ax \equiv b \imod n \\
+\Leftrightarrow & n | (ax - b)\\
+\Rightarrow & d|(ax-b)\\
+\Rightarrow & d|b
+\end{align*}
+Αντίστροφα έχουμε:
+\begin{align*}
+& ax \equiv b \imod n\\
+\Leftrightarrow & n | (ax - b)\\
+\Leftrightarrow & \exists \lambda \in \mathbb{Z}: ax - b = \lambda n\\
+\Leftrightarrow & \exists \lambda \in \mathbb{Z}: \frac{a}{d}x - \frac{b}{d} = \lambda\frac{n}{d} \\
+\Leftrightarrow & \frac{n}{d} | (\frac{a}{d}x - \frac{b}{a}) \\
+\Leftrightarrow & \frac{a}{d}x \equiv \frac{a}{d}x \equiv \frac {b}{d} \imod{\frac{n}{d}}
+\end{align*}
+Άρα η μοναδική λύση στο $\mathbb{Z}_{\frac{n}{d}}$ θα είναι η:
+\[
+x_0 \equiv {(\frac{a}{d})}^{-1}_{\imod {\frac{n}{d}}} \frac{b}{d} \imod{\frac{n}{d}}
+\]
+Συνεπώς οι λύσεις στο $\mathbb{Z}_n$ θα είναι οι εξής $d$:
+\[
+\{x_0 + i\frac{n}{d}: 0 \leq i < d \}
+\]
+\end{proof}
+
+\begin{lemma}
+Απαλοιφής
+\[
+ax \equiv ax' \imod n \Leftrightarrow x \equiv x' \imod {\frac{n}{\gcd(a, n)}}
+\]
+\end{lemma}
+
+\section*{Επίλυση τετραγωνικής ισοτιμίας}
+
+Ζητείται να λυθεί η ισοτιμία ως προς $x$:
+\[
+ax^2 \equiv b \imod n
+\]
+
+Θα εξετάσουμε την περιπτωση:
+\[
+x^2 \equiv b \imod n
+\]
+
+\begin{lemma}
+Έστω ότι $n = p$ πρώτος. Τότε αν η ισοτιμία $x^2 \equiv b \imod n$ έχει λύσεις, τότε αυτές είναι ακριβώς $2$ και μεταξύ τους αντίθετες.
+\end{lemma}
+\begin{proof}
+Έστω $x$ και $y$ δύο διαφορετικές λύσεις της ισοτιμίας.
+\begin{align*}
+&x^2 \equiv y^2 \imod p\\
+\Leftrightarrow & p | (x-y)(x+y)\\
+\Leftrightarrow & p | (x-y) \lor p | (x+y)\\
+\Leftrightarrow & x \equiv y \imod p \lor x \equiv -y \imod p
+\end{align*}
+\end{proof}
+\begin{lemma}
+Έστω ότι $n$ γινόμενο δύο πρώτων $n = pq$. Τότε αν η ισοτιμία $x^2 \equiv b \imod n$ έχει λύσεις, τότε αυτές είναι ακριβώς $2$ ή $4$ και θα είναι μεταξύ τους ανά 2 αντίθετες.
+\end{lemma}
+\begin{proof}
+Έστω λύσεις της ισοτιμίας $x$ και $y$. Τότε παρόμοια με παραπάνω θα έχουμε:
+\begin{align*}
+\left\{\begin{array}{llll}
+     & p|(x-y) \land q|(x+y)\\
+\lor & p|(x-y) \land q|(x-y)\\
+\lor & p|(x+y) \land q|(x+y)\\
+\lor & p|(x+y) \land q|(x-y)
+\end{array}\right.\\
+\Leftrightarrow \left\{\begin{array}{ll}
+     &x \equiv \pm y \imod p\\
+     \land &x \equiv \pm y \imod q
+\end{array}\right.
+\end{align*}
+\end{proof}
+
+Για την $x^2 \equiv  b \imod {pq} $ έχουμε 4 λύσεις λόγω του Κινέζικου Θεωρήματος Υπολοίπων, αφού 
+\begin{align*}
+	&x^2 \equiv b \imod {pq}
+	\Rightarrow 
+	\left\{\begin{array}{ll} & x^2 \equiv b \imod p\\
+	& x^2 \equiv b \imod q\end{array}\right.
+\end{align*}
+και κάθε μία από τις δύο ισοτιμίες δίνει 2 λύσεις (γενικά στα παραπάνω θεωρήματα η λύση $0$ θεωρείται διπλή). Στην ειδική περίπτωση που $p|b$ ή $q|b$ έχουμε 2 λύσεις.
+
+Για παράδειγμα:
+\begin{align*}
+	&x^2 \equiv 29 \imod {35}\\
+	\Rightarrow &
+	\left\{\begin{array}{ll} & x^2 \equiv 29 \imod 5\\
+	& x^2 \equiv 29 \imod 7\end{array}\right.\\
+	\Rightarrow &
+	\left\{\begin{array}{ll} & x^2 \equiv 4 \imod 5\\
+	& x^2 \equiv 1 \imod 7\end{array}\right.\\
+	\Rightarrow &
+	\left\{\begin{array}{ll} & x \equiv \pm 2 \imod 5\\
+	& x \equiv \pm 1 \imod 7\end{array}\right.\\
+	\Rightarrow &
+	x \equiv \left\{\begin{array}{llll} 22\\27\\8\\13 \end{array}\right. \imod {35}
+\end{align*}
+
+\section*{Ασκήσεις}
+\begin{enumerate}
+	\item Να αποδειχθεί το Λήμμα Απαλοιφής.
+\end{enumerate}
+
+% \section*{Βιβλιογραφία}
+% \begin{enumerate}
+% 	\item \text{[}Ζάχος\text{]}: Ε. Ζάχος, ((Σημειώσεις στη Θεωρία Αριθμων και την Κρυπτογραφία)), 2007
+% \end{enumerate}
+\end{document}

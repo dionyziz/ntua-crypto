@@ -1,0 +1,370 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.28)  2 DEC 2011 17:53
+entering extended mode
+**crypto-2.tex
+(C:\Users\dionyziz\Documents\work\ntua\crypto\crypto-2.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\greek.ldf"
+Language: greek 2005/03/30 v1.3l Greek support from the babel system
+
+Loading the definitions for the Greek font encoding
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\lgrenc.def"
+File: lgrenc.def 2008/06/17 v2.3 Greek Encoding
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\utf8x.def"
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\ucs.sty"
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\data\uni-global.def"
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count89
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen104
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks21
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks22
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks23
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks30
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(C:\Users\dionyziz\Documents\work\ntua\crypto\crypto-2.aux
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 2.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\lgrcmr.fd"
+File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
+))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\ucsencs.def"
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+
+fontencoding LGR patched
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen115
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen116
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks33
+) <Pyrforos2.png, id=1, 136.51pt x 133.49875pt>
+File: Pyrforos2.png Graphic file (type png)
+ <use Pyrforos2.png>
+Package pdftex.def Info: Pyrforos2.png used on input line 17.
+(pdftex.def)             Requested size: 53.9978pt x 52.80576pt.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\data\uni-3.def"
+File: uni-3.def 2004/10/17 UCS: Unicode data U+0300..U+03FF
+)
+Missing character: There is no › in font grmc1728!
+Missing character: There is no › in font grmn1440!
+Missing character: There is no › in font grxn2074!
+Missing character: There is no › in font grmi1200!
+Missing character: There is no › in font grmi1200!
+Missing character: There is no › in font grmn1200!
+Missing character: There is no › in font grmc1200!
+Missing character: There is no › in font grmc1200!
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Missing character: There is no › in font grmi1200!
+ [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/dionyziz/Documen
+ts/work/ntua/crypto/Pyrforos2.png>]
+Missing character: There is no › in font grxn1440!
+Missing character: There is no › in font grxn1440!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+ [2]
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grxn1440!
+Missing character: There is no › in font grxn1440!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+ [3]
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmi1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grmn1095!
+Missing character: There is no › in font grxn1440!
+Missing character: There is no › in font grxn1440!
+ [4]
+(C:\Users\dionyziz\Documents\work\ntua\crypto\crypto-2.aux) ) 
+Here is how much of TeX's memory you used:
+ 3616 strings out of 494045
+ 50230 string characters out of 3145959
+ 108644 words of memory out of 3000000
+ 6843 multiletter control sequences out of 15000+200000
+ 23597 words of font info for 64 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 27i,14n,24p,374b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\dionyzi
+z\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\gnu\carmina\dpi600\grmi1095.pk> <C:\
+Users\dionyziz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cbgreek\dpi600\g
+rxn1095.pk> <C:\Users\dionyziz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\
+cbgreek\dpi600\grxn1440.pk> <C:\Users\dionyziz\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\public\cbgreek\dpi600\grmn1095.pk> <C:\Users\dionyziz\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\public\cbgreek\dpi600\grmc1200.pk> <C:\Users\dionyziz\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cbgreek\dpi600\grmn1200.pk> <C:
+\Users\dionyziz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\gnu\carmina\dpi600\grm
+i1200.pk> <C:\Users\dionyziz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cb
+greek\dpi600\grxn2074.pk> <C:\Users\dionyziz\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\cbgreek\dpi600\grmn1440.pk> <C:\Users\dionyziz\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\public\cbgreek\dpi600\grmc1728.pk><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on crypto-2.pdf (4 pages, 200949 bytes).
+PDF statistics:
+ 336 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
